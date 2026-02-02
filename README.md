@@ -4,3 +4,15 @@
 - 6702041511039
 - Suphaporn Toomthong
 - s6702041511039@email.kmutnb.ac.th
+
+## Environment
+```sh
+cp env.simple .env
+```
+
+## Running services
+### Database
+```sh
+docker compose -f db.yaml yp # monitoring
+docker compose -f db.yaml up -d # background
+```
