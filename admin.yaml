@@ -1,0 +1,9 @@
+services:
+  s3admin:
+    image: dpage/pgadmin4:latest
+    container_name: 68-s3-admin
+    environment: 
+      PGADMIN_DEFAULT_EMAIL: ${ADDMIN_MAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${ADDMIN_PASS}
+    ports:
+      - ${ADDMIN_PORT}:80
