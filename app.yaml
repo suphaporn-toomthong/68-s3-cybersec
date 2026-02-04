@@ -1,0 +1,13 @@
+services:
+  s3app:
+    image: prewee/strapi:latest
+    container_name: 68-s3-app
+    environment: 
+      DATABASE_CLIENT: ${APP_CLIENT}
+      DATABASE_NAME: ${APP_NAME}
+      DATABASE_USER: ${APP_USER}
+      DATABASE_PASSWORD: ${APP_PASSWORD}
+      DATABASE_PORT: ${APP_PORT}
+      DATABASE_HOST: ${APP_HOST}
+    ports:
+      - ${APP_PORT}:80
