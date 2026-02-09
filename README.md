@@ -16,3 +16,9 @@ cp env.simple .env
 docker compose -f db.yaml yp # monitoring
 docker compose -f db.yaml up -d # background
 ```
+
+### App
+```sh
+docker compose -f app.yaml yp # monitoring
+docker compose -f app.yaml up -d # background
+```
